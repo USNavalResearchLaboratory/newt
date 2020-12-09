@@ -1,0 +1,3 @@
+include README-CONFIG.TXT
+recursive-include newt/html *
+prune newt

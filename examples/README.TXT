@@ -1,0 +1,7 @@
+Newt is built around the concept of Python decorators, which allow methods to be wrapped in other methods to provide a context for how they work. This model promotes simplicity because the method e.g. a transport protocol, does a simple task i.e. transports raw data from one place to another. However, using a decorator, it can be wrapped in method can exposes this connection to the outside world (i.e. the user) in many ways e.g. a JSONified or pickled Python data structure, a list, a args/kwargs set. And by decoupling the transport from the underlying transport protocol, a mechanism is created by which any data structure can be converted into any payload and sent to any underlying transport connection.
+
+This example shows how you can use the underlying transport API to send any data, using any serialisation mechanism across UDP, Multicast or ZMQ links. Simply call a method with whatever you want to send and Newt takes the data and serialises it and passes it to the remote method. Although this resembles RPC, it differs in two major ways:
+
+- It only provides one way connections - to honour decentralised p2p design for the workflows that are run using newt, Typical RPC are request/response, making them centralised.
+- It works over any protocol that can send anything!  You can plug in any protocol you want and annotate it with the Transport decorator and Newt can use the connection to send data.
+

@@ -1,0 +1,216 @@
+{
+    "edges": [
+        {
+            "in_node": "Ophelia", 
+            "in_port": 2, 
+            "out_node": "Laertes", 
+            "out_port": 1, 
+            "sequence_id": 1, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Laertes", 
+            "in_port": 4, 
+            "out_node": "Ophelia", 
+            "out_port": 3, 
+            "sequence_id": 2, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Polonius", 
+            "in_port": 6, 
+            "out_node": "Laertes", 
+            "out_port": 5, 
+            "sequence_id": 3, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Laertes", 
+            "in_port": 8, 
+            "out_node": "Polonius", 
+            "out_port": 7, 
+            "sequence_id": 4, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Ophelia", 
+            "in_port": 10, 
+            "out_node": "Polonius", 
+            "out_port": 9, 
+            "sequence_id": 5, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Polonius", 
+            "in_port": 12, 
+            "out_node": "Ophelia", 
+            "out_port": 11, 
+            "sequence_id": 6, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Conductor", 
+            "in_port": 14, 
+            "out_node": "Ophelia", 
+            "out_port": 13, 
+            "sequence_id": 7, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }
+    ], 
+    "name": "Hamlet", 
+    "nodes": [
+        {
+            "ports": {
+                "1": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6000, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 1, 
+                    "port_type": "Output_Port"
+                }, 
+                "4": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6003, 
+                    "port_id": 4, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "5": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6004, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 5, 
+                    "port_type": "Output_Port"
+                }, 
+                "8": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6007, 
+                    "port_id": 8, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Laertes"
+        }, 
+        {
+            "ports": {
+                "2": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6001, 
+                    "port_id": 2, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "3": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6002, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 3, 
+                    "port_type": "Output_Port"
+                }, 
+                "10": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6009, 
+                    "port_id": 10, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "11": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6010, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 11, 
+                    "port_type": "Output_Port"
+                }, 
+                "13": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6012, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 13, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Ophelia"
+        }, 
+        {
+            "ports": {
+                "6": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6005, 
+                    "port_id": 6, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "7": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6006, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 7, 
+                    "port_type": "Output_Port"
+                }, 
+                "9": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6008, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 9, 
+                    "port_type": "Output_Port"
+                }, 
+                "12": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6011, 
+                    "port_id": 12, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Polonius"
+        }, 
+        {
+            "ports": {
+                "14": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6013, 
+                    "port_id": 14, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Conductor"
+        }
+    ]
+}

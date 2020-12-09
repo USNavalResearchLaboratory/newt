@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--
+    Description:
+        Two clusters of 5 nodes each fragmenting and coalescing about every
+        30 seconds.
+    Author:
+        Aaron Rosenfeld
+    Date:
+        10 September 2010
+-->
+<motionPlan>
+	<path name="bottomleft">
+		<parameter name="show">yes</parameter>
+		<point>0,0</point>
+		<point>200,0</point>
+		<point>200,200</point>
+		<point>0,200</point>
+	</path>
+	<path name="bottomright">
+		<parameter name="show">yes</parameter>
+		<point>400,0</point>
+		<point>600,0</point>
+		<point>600,200</point>
+		<point>400,200</point>
+	</path>
+	<path name="topleft">
+		<parameter name="show">yes</parameter>
+		<point>0,350</point>
+		<point>200,350</point>
+		<point>200,550</point>
+		<point>0,550</point>
+	</path>
+	<path name="topright">
+		<parameter name="show">yes</parameter>
+		<point>400,350</point>
+		<point>600,350</point>
+		<point>600,550</point>
+		<point>400,550</point>
+	</path>
+
+    <repeat var="N" end="5">
+        <Node name="group1_$N$">
+            <parameter name="drawSize">5</parameter>
+            <parameter name="color">00ff00</parameter>
+            <parameter name="maxSpeed">20</parameter>
+
+            <motion type="realOverlay">
+                <parameter name="maxSpeed">20</parameter>
+                <motion type="sequence">
+                    <motion type="wanderVector" duration="5">
+                        <path ref="topleft" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" duration="60" startEvent="tr$N$">
+                        <path ref="topright" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" duration="60" startEvent="br$N$">
+                        <path ref="bottomright" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" duration="60" startEvent="bl$N$">
+                        <path ref="bottomleft" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" startEvent="tl$N$">
+                        <path ref="topleft" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                </motion>
+            </motion>
+
+			<radio>
+				<parameter name="range">150</parameter>
+				<parameter name="channel">1</parameter>
+			</radio>
+        </Node>
+    </repeat>
+
+    <repeat var="N" end="5">
+        <Node name="group1_$N$">
+            <parameter name="drawSize">5</parameter>
+            <parameter name="color">ff0000</parameter>
+            <parameter name="maxSpeed">20</parameter>
+
+            <motion type="realOverlay">
+                <parameter name="maxSpeed">20</parameter>
+                <motion type="sequence">
+                    <motion type="wanderVector" duration="40">
+                        <path ref="topleft" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" duration="60" startEvent="tr$N$">
+                        <path ref="topright" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" duration="60" startEvent="br$N$">
+                        <path ref="bottomright" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" duration="60" startEvent="bl$N$">
+                        <path ref="bottomleft" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                    <motion type="wanderVector" startEvent="tl$N$">
+                        <path ref="topleft" />
+                        <parameter name="speed">20</parameter>
+                    </motion>
+                </motion>
+            </motion>
+
+			<radio>
+				<parameter name="range">150</parameter>
+				<parameter name="channel">1</parameter>
+			</radio>
+        </Node>
+    </repeat>
+</motionPlan>

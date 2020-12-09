@@ -1,0 +1,20 @@
+Here is a basic sketchup that may give you a better notion of the type of exchange flow we are looking at in this initial experimentation.
+
+Basic Workflow Test Scenario Sketch with Communicatin Exchanges for Newt:
+
+(There are some mobile things in here that we will actually implement on our side but you could notionally do it with timers,etc)
+
+Actors:
+-       Sensors(4): provide data
+-       Collector(1): summarize data/alarms and report/log
+-       ERC(1): Emerg Response Command: Collect status, coordinate responses, command actions and monitor progress, validate completion and post event actions.
+-       Mobile responders (2 teams of 4 each): both repair crew response and rescue response
+-       a set of 4 network sensors are providing continuous sensor feeds via UDP multicast or unicast data periodic data reports (mgen or udp)
+-       A collector process (at a node) is receiving these reports (possibly not reliably) and summarizing them to provide reports periodically (once every 10 secs for example).
+-       Alarm or summary reports are communicated to a emergency response command (ERC) via unicast messaging
+-       When an alarm is received for the first time (orders are dispatched to mobile emergency response crews).  This is a message exchange defined as tcp, udp, or mgen data.
+-       If order received then mobile crews begin route to response area, progress and status is periodically provided to ERC via network communication exchanges. ERC can redirect crew periodically with commands or supporting data exchanges to avoid delays and assist with issues that may arise (I know this is nebulous but an example is a road outage due to environmental problem).
+-       Else if order not received reliably ERC continues attempts to contact and receive ACKs.  If ACK not received reliably ERC also continues in same manner however crews response.
+-       An event occurs x mins in requiring additional mobile responders for medical rescue assistance.
+-       Telepresence exchanges between ERC and mobile teams via ISR (image transfers) assists crews if disrupted or delayed this effects the ability to complete work logic state machine.
+-                   React, Arrive, Locate, Assess, Repair/Medical/Rescue Action, Transport .

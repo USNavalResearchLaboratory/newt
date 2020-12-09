@@ -1,0 +1,754 @@
+{
+    "edges": [
+        {
+            "in_node": "Gertrude", 
+            "in_port": 2, 
+            "out_node": "Claudius", 
+            "out_port": 1, 
+            "sequence_id": 1, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Rosencrantz", 
+            "in_port": 4, 
+            "out_node": "Gertrude", 
+            "out_port": 3, 
+            "sequence_id": 2, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Guildenstern", 
+            "in_port": 6, 
+            "out_node": "Rosencrantz", 
+            "out_port": 5, 
+            "sequence_id": 3, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Claudius", 
+            "in_port": 8, 
+            "out_node": "Guildenstern", 
+            "out_port": 7, 
+            "sequence_id": 4, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Guildenstern", 
+            "in_port": 10, 
+            "out_node": "Gertrude", 
+            "out_port": 9, 
+            "sequence_id": 5, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Gertrude", 
+            "in_port": 12, 
+            "out_node": "Guildenstern", 
+            "out_port": 11, 
+            "sequence_id": 6, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Polonius", 
+            "in_port": 14, 
+            "out_node": "Gertrude", 
+            "out_port": 13, 
+            "sequence_id": 7, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Claudius", 
+            "in_port": 16, 
+            "out_node": "Polonius", 
+            "out_port": 15, 
+            "sequence_id": 8, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Polonius", 
+            "in_port": 18, 
+            "out_node": "Claudius", 
+            "out_port": 17, 
+            "sequence_id": 9, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Claudius", 
+            "in_port": 20, 
+            "out_node": "Gertrude", 
+            "out_port": 19, 
+            "sequence_id": 10, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Voltimand", 
+            "in_port": 22, 
+            "out_node": "Claudius", 
+            "out_port": 21, 
+            "sequence_id": 11, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Claudius", 
+            "in_port": 24, 
+            "out_node": "Voltimand", 
+            "out_port": 23, 
+            "sequence_id": 12, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Gertrude", 
+            "in_port": 26, 
+            "out_node": "Polonius", 
+            "out_port": 25, 
+            "sequence_id": 13, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Hamlet", 
+            "in_port": 28, 
+            "out_node": "Polonius", 
+            "out_port": 27, 
+            "sequence_id": 14, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Polonius", 
+            "in_port": 30, 
+            "out_node": "Hamlet", 
+            "out_port": 29, 
+            "sequence_id": 15, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Rosencrantz", 
+            "in_port": 32, 
+            "out_node": "Polonius", 
+            "out_port": 31, 
+            "sequence_id": 16, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Rosencrantz", 
+            "in_port": 34, 
+            "out_node": "Guildenstern", 
+            "out_port": 33, 
+            "sequence_id": 17, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Hamlet", 
+            "in_port": 36, 
+            "out_node": "Rosencrantz", 
+            "out_port": 35, 
+            "sequence_id": 18, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Rosencrantz", 
+            "in_port": 38, 
+            "out_node": "Hamlet", 
+            "out_port": 37, 
+            "sequence_id": 19, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Hamlet", 
+            "in_port": 40, 
+            "out_node": "Guildenstern", 
+            "out_port": 39, 
+            "sequence_id": 20, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Guildenstern", 
+            "in_port": 42, 
+            "out_node": "Hamlet", 
+            "out_port": 41, 
+            "sequence_id": 21, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Player1", 
+            "in_port": 44, 
+            "out_node": "Hamlet", 
+            "out_port": 43, 
+            "sequence_id": 22, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Hamlet", 
+            "in_port": 46, 
+            "out_node": "Player1", 
+            "out_port": 45, 
+            "sequence_id": 23, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Player1", 
+            "in_port": 48, 
+            "out_node": "Polonius", 
+            "out_port": 47, 
+            "sequence_id": 24, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Polonius", 
+            "in_port": 50, 
+            "out_node": "Player1", 
+            "out_port": 49, 
+            "sequence_id": 25, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Conductor", 
+            "in_port": 52, 
+            "out_node": "Hamlet", 
+            "out_port": 51, 
+            "sequence_id": 26, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }
+    ], 
+    "name": "Hamlet", 
+    "nodes": [
+        {
+            "ports": {
+                "1": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6000, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 1, 
+                    "port_type": "Output_Port"
+                }, 
+                "8": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6007, 
+                    "port_id": 8, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "16": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6015, 
+                    "port_id": 16, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "17": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6016, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 17, 
+                    "port_type": "Output_Port"
+                }, 
+                "20": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6019, 
+                    "port_id": 20, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "21": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6020, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 21, 
+                    "port_type": "Output_Port"
+                }, 
+                "24": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6023, 
+                    "port_id": 24, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Claudius"
+        }, 
+        {
+            "ports": {
+                "2": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6001, 
+                    "port_id": 2, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "3": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6002, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 3, 
+                    "port_type": "Output_Port"
+                }, 
+                "9": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6008, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 9, 
+                    "port_type": "Output_Port"
+                }, 
+                "12": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6011, 
+                    "port_id": 12, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "13": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6012, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 13, 
+                    "port_type": "Output_Port"
+                }, 
+                "19": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6018, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 19, 
+                    "port_type": "Output_Port"
+                }, 
+                "26": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6025, 
+                    "port_id": 26, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Gertrude"
+        }, 
+        {
+            "ports": {
+                "4": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6003, 
+                    "port_id": 4, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "5": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6004, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 5, 
+                    "port_type": "Output_Port"
+                }, 
+                "32": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6031, 
+                    "port_id": 32, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "34": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6033, 
+                    "port_id": 34, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "35": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6034, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 35, 
+                    "port_type": "Output_Port"
+                }, 
+                "38": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6037, 
+                    "port_id": 38, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Rosencrantz"
+        }, 
+        {
+            "ports": {
+                "6": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6005, 
+                    "port_id": 6, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "7": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6006, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 7, 
+                    "port_type": "Output_Port"
+                }, 
+                "10": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6009, 
+                    "port_id": 10, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "11": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6010, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 11, 
+                    "port_type": "Output_Port"
+                }, 
+                "33": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6032, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 33, 
+                    "port_type": "Output_Port"
+                }, 
+                "39": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6038, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 39, 
+                    "port_type": "Output_Port"
+                }, 
+                "42": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6041, 
+                    "port_id": 42, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Guildenstern"
+        }, 
+        {
+            "ports": {
+                "14": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6013, 
+                    "port_id": 14, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "15": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6014, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 15, 
+                    "port_type": "Output_Port"
+                }, 
+                "18": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6017, 
+                    "port_id": 18, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "25": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6024, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 25, 
+                    "port_type": "Output_Port"
+                }, 
+                "27": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6026, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 27, 
+                    "port_type": "Output_Port"
+                }, 
+                "30": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6029, 
+                    "port_id": 30, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "31": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6030, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 31, 
+                    "port_type": "Output_Port"
+                }, 
+                "47": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6046, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 47, 
+                    "port_type": "Output_Port"
+                }, 
+                "50": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6049, 
+                    "port_id": 50, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Polonius"
+        }, 
+        {
+            "ports": {
+                "22": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6021, 
+                    "port_id": 22, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "23": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6022, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 23, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Voltimand"
+        }, 
+        {
+            "ports": {
+                "28": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6027, 
+                    "port_id": 28, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "29": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6028, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 29, 
+                    "port_type": "Output_Port"
+                }, 
+                "36": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6035, 
+                    "port_id": 36, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "37": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6036, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 37, 
+                    "port_type": "Output_Port"
+                }, 
+                "40": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6039, 
+                    "port_id": 40, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "41": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6040, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 41, 
+                    "port_type": "Output_Port"
+                }, 
+                "43": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6042, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 43, 
+                    "port_type": "Output_Port"
+                }, 
+                "46": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6045, 
+                    "port_id": 46, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "51": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6050, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 51, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Hamlet"
+        }, 
+        {
+            "ports": {
+                "44": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6043, 
+                    "port_id": 44, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "45": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6044, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 45, 
+                    "port_type": "Output_Port"
+                }, 
+                "48": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6047, 
+                    "port_id": 48, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "49": {
+                    "args": [], 
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6048, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 49, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Player1"
+        }, 
+        {
+            "ports": {
+                "52": {
+                    "bind_address": "192.168.1.209", 
+                    "bind_port": 6051, 
+                    "port_id": 52, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Conductor"
+        }
+    ]
+}

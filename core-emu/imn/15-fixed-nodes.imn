@@ -1,0 +1,399 @@
+node n1 {
+    type router
+    model mdr
+    network-config {
+	hostname Node1
+	!
+	interface eth0
+	 ip address 10.0.0.1/32
+	 ipv6 address 2001:0::1/128
+	!
+    }
+    canvas c1
+    iconcoords {240.0 901.6666666666666}
+    labelcoords {237.33333333333334 945.6666666666666}
+    interface-peer {eth0 n11}
+    custom-image /tmp/sensor.png
+}
+
+node n2 {
+    type router
+    model mdr
+    network-config {
+	hostname Node2
+	!
+	interface eth0
+	 ip address 10.0.0.2/32
+	 ipv6 address 2001:0::2/128
+	!
+    }
+    canvas c1
+    iconcoords {905.3333333333334 904.0}
+    labelcoords {916.0 952.0}
+    interface-peer {eth0 n11}
+    custom-image /tmp/sensor.png
+}
+
+node n3 {
+    type router
+    model mdr
+    network-config {
+	hostname Node3
+	!
+	interface eth0
+	 ip address 10.0.0.3/32
+	 ipv6 address 2001:0::3/128
+	!
+    }
+    canvas c1
+    iconcoords {506.6666666666667 1063.3333333333333}
+    labelcoords {506.6666666666667 1095.3333333333333}
+    interface-peer {eth0 n11}
+    custom-image /tmp/sensor.png
+}
+
+node n4 {
+    type router
+    model mdr
+    network-config {
+	hostname Node4
+	!
+	interface eth0
+	 ip address 10.0.0.4/32
+	 ipv6 address 2001:0::4/128
+	!
+    }
+    canvas c1
+    iconcoords {458.0 962.0}
+    labelcoords {474.0 1007.3333333333334}
+    interface-peer {eth0 n11}
+    custom-image /tmp/collector.jpg
+}
+
+node n5 {
+    type router
+    model mdr
+    network-config {
+	hostname Node5
+	!
+	interface eth0
+	 ip address 10.0.0.5/32
+	 ipv6 address 2001:0::5/128
+	!
+    }
+    canvas c1
+    iconcoords {590.0 730.6666666666666}
+    labelcoords {590.0 772.0}
+    interface-peer {eth0 n11}
+    custom-image /tmp/controlcenter.jpg
+}
+
+node n6 {
+    type router
+    model mdr
+    network-config {
+	hostname Node6
+	!
+	interface eth0
+	 ip address 10.0.0.6/32
+	 ipv6 address 2001:0::6/128
+	!
+    }
+    canvas c1
+    iconcoords {202.0 1041.6666666666667}
+    labelcoords {204.66666666666666 1085.6666666666667}
+    interface-peer {eth0 n11}
+    custom-image /tmp/responder.png
+}
+
+node n7 {
+    type router
+    model mdr
+    network-config {
+	hostname Node7
+	!
+	interface eth0
+	 ip address 10.0.0.7/32
+	 ipv6 address 2001:0::7/128
+	!
+    }
+    canvas c1
+    iconcoords {363.0 915.0}
+    labelcoords {369.6666666666667 955.0}
+    interface-peer {eth0 n11}
+    custom-image /tmp/responder.png
+}
+
+node n8 {
+    type router
+    model mdr
+    network-config {
+	hostname Node8
+	!
+	interface eth0
+	 ip address 10.0.0.8/32
+	 ipv6 address 2001:0::8/128
+	!
+    }
+    canvas c1
+    iconcoords {747.6666666666666 861.0}
+    labelcoords {751.6666666666666 902.3333333333334}
+    interface-peer {eth0 n11}
+    custom-image /usr/local/share/core/icons/normal/router_green.gif
+}
+
+node n9 {
+    type router
+    model mdr
+    network-config {
+	hostname Node9
+	!
+	interface eth0
+	 ip address 10.0.0.9/32
+	 ipv6 address 2001:0::9/128
+	!
+    }
+    canvas c1
+    iconcoords {927.0 1034.3333333333333}
+    labelcoords {925.6666666666666 1075.6666666666667}
+    interface-peer {eth0 n11}
+}
+
+node n10 {
+    type router
+    model mdr
+    network-config {
+	hostname Node10
+	!
+	interface eth0
+	 ip address 10.0.0.10/32
+	 ipv6 address 2001:0::10/128
+	!
+    }
+    canvas c1
+    iconcoords {609.6666666666666 486.0}
+    labelcoords {613.6666666666666 535.3333333333334}
+    interface-peer {eth0 n11}
+}
+
+node n11 {
+    type wlan
+    network-config {
+	hostname wlan11
+	!
+	interface wireless
+	 ip address 10.0.0.0/32
+	 ipv6 address 2001:0::0/128
+	!
+	mobmodel
+	coreapi
+	basic_range
+	!
+    }
+    custom-config {
+	custom-config-id basic_range
+	custom-command {3 3 9 9 9}
+	config {
+	range=275
+	bandwidth=54000000
+	jitter=0
+	delay=20000
+	error=0
+	}
+    }
+    canvas c1
+    iconcoords {886.6666666666666 397.6666666666667}
+    labelcoords {910.6666666666666 449.6666666666667}
+    interface-peer {e0 n1}
+    interface-peer {e1 n2}
+    interface-peer {e2 n3}
+    interface-peer {e3 n4}
+    interface-peer {e4 n5}
+    interface-peer {e5 n6}
+    interface-peer {e6 n7}
+    interface-peer {e7 n8}
+    interface-peer {e8 n9}
+    interface-peer {e9 n10}
+    interface-peer {e10 n12}
+    interface-peer {e11 n13}
+    interface-peer {e12 n14}
+    interface-peer {e13 n15}
+    interface-peer {e14 n16}
+}
+
+node n12 {
+    type router
+    model mdr
+    network-config {
+	hostname Node11
+	!
+	interface eth0
+	 ip address 10.0.0.11/32
+	 ipv6 address 2001:0::11/128
+	!
+    }
+    canvas c1
+    iconcoords {448.3333333333333 805.6666666666666}
+    labelcoords {449.6666666666667 847.0}
+    interface-peer {eth0 n11}
+}
+
+node n13 {
+    type router
+    model mdr
+    network-config {
+	hostname Node12
+	!
+	interface eth0
+	 ip address 10.0.0.12/32
+	 ipv6 address 2001:0::12/128
+	!
+    }
+    canvas c1
+    iconcoords {712.0 1024.3333333333333}
+    labelcoords {754.6666666666666 1028.3333333333333}
+    interface-peer {eth0 n11}
+    custom-image /tmp/actor.png
+}
+
+node n14 {
+    type router
+    model mdr
+    network-config {
+	hostname Node13
+	!
+	interface eth0
+	 ip address 10.0.0.13/32
+	 ipv6 address 2001:0::13/128
+	!
+    }
+    canvas c1
+    iconcoords {868.0 702.6666666666666}
+    labelcoords {872.0 746.6666666666666}
+    interface-peer {eth0 n11}
+}
+
+node n15 {
+    type router
+    model mdr
+    network-config {
+	hostname Node14
+	!
+	interface eth0
+	 ip address 10.0.0.14/32
+	 ipv6 address 2001:0::14/128
+	!
+    }
+    canvas c1
+    iconcoords {1023.0 1051.0}
+    labelcoords {1023.0 1095.0}
+    interface-peer {eth0 n11}
+}
+
+node n16 {
+    type router
+    model mdr
+    network-config {
+	hostname Node15
+	!
+	interface eth0
+	 ip address 10.0.0.15/32
+	 ipv6 address 2001:0::15/128
+	!
+    }
+    canvas c1
+    iconcoords {612.3333333333334 867.6666666666666}
+    labelcoords {613.6666666666666 909.0}
+    interface-peer {eth0 n11}
+}
+
+link l1 {
+    nodes {n11 n1}
+}
+
+link l2 {
+    nodes {n11 n2}
+}
+
+link l3 {
+    nodes {n11 n3}
+}
+
+link l4 {
+    nodes {n11 n4}
+}
+
+link l5 {
+    nodes {n11 n5}
+}
+
+link l6 {
+    nodes {n11 n6}
+}
+
+link l7 {
+    nodes {n11 n7}
+}
+
+link l8 {
+    nodes {n11 n8}
+}
+
+link l9 {
+    nodes {n11 n9}
+}
+
+link l10 {
+    nodes {n11 n10}
+}
+
+link l11 {
+    nodes {n11 n12}
+}
+
+link l12 {
+    nodes {n11 n13}
+}
+
+link l13 {
+    nodes {n11 n14}
+}
+
+link l14 {
+    nodes {n11 n15}
+}
+
+link l15 {
+    nodes {n11 n16}
+}
+
+canvas c1 {
+    name {Canvas1}
+    refpt {0 0 47.5791667 -122.132322 2.0}
+    scale {150.0}
+    wallpaper-style {scaled}
+    wallpaper {/tmp/bruce-szmurlo.jpg}
+    size {1100 1098}
+}
+
+option global {
+    interface_names no
+    ip_addresses yes
+    ipv6_addresses no
+    node_labels yes
+    link_labels yes
+    show_api no
+    background_images no
+    annotations yes
+    grid no
+    traffic_start 0
+}
+
+option session {
+    controlnet=172.16.0.10/24
+    controlnet_updown_script=
+    enablerj45=1
+    enablesdt=0
+    preservedir=0
+}
+

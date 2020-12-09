@@ -1,0 +1,142 @@
+{
+    "Gertrude": {
+        "node": "n13", 
+        "address": "10.0.0.13"
+    }, 
+    "Laertes": {
+        "node": "n18", 
+        "address": "10.0.0.18"
+    }, 
+    "Gentleman": {
+        "node": "n12", 
+        "address": "10.0.0.12"
+    }, 
+    "Player1": {
+        "node": "n25", 
+        "address": "10.0.0.25"
+    }, 
+    "Messenger": {
+        "node": "n22", 
+        "address": "10.0.0.22"
+    }, 
+    "Clown2": {
+        "node": "n6", 
+        "address": "10.0.0.6"
+    }, 
+    "Clown1": {
+        "node": "n5", 
+        "address": "10.0.0.5"
+    }, 
+    "Lord": {
+        "node": "n19", 
+        "address": "10.0.0.19"
+    }, 
+    "Marcellus": {
+        "node": "n21", 
+        "address": "10.0.0.21"
+    }, 
+    "Francisco": {
+        "node": "n11", 
+        "address": "10.0.0.11"
+    }, 
+    "Bernardo": {
+        "node": "n2", 
+        "address": "10.0.0.2"
+    }, 
+    "Conductor": {
+        "node": "n7", 
+        "address": "10.0.0.7"
+    }, 
+    "Ophelia": {
+        "node": "n23", 
+        "address": "10.0.0.23"
+    }, 
+    "Voltimand": {
+        "node": "n35", 
+        "address": "10.0.0.35"
+    }, 
+    "Polonius": {
+        "node": "n28", 
+        "address": "10.0.0.28"
+    }, 
+    "Ghost": {
+        "node": "n14", 
+        "address": "10.0.0.14"
+    }, 
+    "Horatio": {
+        "node": "n17", 
+        "address": "10.0.0.17"
+    }, 
+    "Servant": {
+        "node": "n34", 
+        "address": "10.0.0.34"
+    }, 
+    "Fortinbras": {
+        "node": "n10", 
+        "address": "10.0.0.10"
+    }, 
+    "Guildenstern": {
+        "node": "n15", 
+        "address": "10.0.0.15"
+    }, 
+    "Reynaldo": {
+        "node": "n31", 
+        "address": "10.0.0.31"
+    }, 
+    "Priest": {
+        "node": "n29", 
+        "address": "10.0.0.29"
+    }, 
+    "Osric": {
+        "node": "n24", 
+        "address": "10.0.0.24"
+    }, 
+    "Prologue": {
+        "node": "n30", 
+        "address": "10.0.0.30"
+    }, 
+    "Player_King": {
+        "node": "n26", 
+        "address": "10.0.0.26"
+    }, 
+    "Ambassador": {
+        "node": "n1", 
+        "address": "10.0.0.1"
+    }, 
+    "Claudius": {
+        "node": "n4", 
+        "address": "10.0.0.4"
+    }, 
+    "Captain": {
+        "node": "n3", 
+        "address": "10.0.0.3"
+    }, 
+    "Rosencrantz": {
+        "node": "n32", 
+        "address": "10.0.0.32"
+    }, 
+    "Danes": {
+        "node": "n9", 
+        "address": "10.0.0.9"
+    }, 
+    "Hamlet": {
+        "node": "n16", 
+        "address": "10.0.0.16"
+    }, 
+    "Sailor": {
+        "node": "n33", 
+        "address": "10.0.0.33"
+    }, 
+    "Lucianus": {
+        "node": "n20", 
+        "address": "10.0.0.20"
+    }, 
+    "Player_Queen": {
+        "node": "n27", 
+        "address": "10.0.0.27"
+    }, 
+    "Cornelius": {
+        "node": "n8", 
+        "address": "10.0.0.8"
+    }
+}

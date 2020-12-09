@@ -1,0 +1,63 @@
+{
+    "edges": [
+        {
+            "id": "1/2", 
+            "source": "Hamlet", 
+            "target": "Rosencrantz"
+        }, 
+        {
+            "id": "3/4", 
+            "source": "Rosencrantz", 
+            "target": "Hamlet"
+        }, 
+        {
+            "id": "5/6", 
+            "source": "Hamlet", 
+            "target": "Guildenstern"
+        }, 
+        {
+            "id": "7/8", 
+            "source": "Guildenstern", 
+            "target": "Hamlet"
+        }, 
+        {
+            "id": "9/10", 
+            "source": "Hamlet", 
+            "target": "Conductor"
+        }
+    ], 
+    "nodes": [
+        {
+            "color": "rgb(153,255,0)", 
+            "id": "Hamlet", 
+            "label": "Hamlet", 
+            "size": 10.0, 
+            "x": 70, 
+            "y": 110
+        }, 
+        {
+            "color": "rgb(153,255,0)", 
+            "id": "Rosencrantz", 
+            "label": "Rosencrantz", 
+            "size": 10.0, 
+            "x": 90, 
+            "y": 120
+        }, 
+        {
+            "color": "rgb(153,255,0)", 
+            "id": "Guildenstern", 
+            "label": "Guildenstern", 
+            "size": 10.0, 
+            "x": 110, 
+            "y": 130
+        }, 
+        {
+            "color": "rgb(153,255,0)", 
+            "id": "Conductor", 
+            "label": "Conductor", 
+            "size": 10.0, 
+            "x": 130, 
+            "y": 140
+        }
+    ]
+}

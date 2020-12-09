@@ -1,0 +1,162 @@
+{
+    "edges": [
+        {
+            "in_node": "Servant", 
+            "in_port": 2, 
+            "out_node": "Horatio", 
+            "out_port": 1, 
+            "sequence_id": 1, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Horatio", 
+            "in_port": 4, 
+            "out_node": "Servant", 
+            "out_port": 3, 
+            "sequence_id": 2, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Sailor", 
+            "in_port": 6, 
+            "out_node": "Horatio", 
+            "out_port": 5, 
+            "sequence_id": 3, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Horatio", 
+            "in_port": 8, 
+            "out_node": "Sailor", 
+            "out_port": 7, 
+            "sequence_id": 4, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }, 
+        {
+            "in_node": "Conductor", 
+            "in_port": 10, 
+            "out_node": "Horatio", 
+            "out_port": 9, 
+            "sequence_id": 5, 
+            "serialisation": "PICKLE", 
+            "transport": "UDP"
+        }
+    ], 
+    "name": "Hamlet", 
+    "nodes": [
+        {
+            "ports": {
+                "1": {
+                    "args": [], 
+                    "bind_address": "10.0.0.17", 
+                    "bind_port": 6000, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 1, 
+                    "port_type": "Output_Port"
+                }, 
+                "4": {
+                    "bind_address": "10.0.0.17", 
+                    "bind_port": 6003, 
+                    "port_id": 4, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "5": {
+                    "args": [], 
+                    "bind_address": "10.0.0.17", 
+                    "bind_port": 6004, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 5, 
+                    "port_type": "Output_Port"
+                }, 
+                "8": {
+                    "bind_address": "10.0.0.17", 
+                    "bind_port": 6007, 
+                    "port_id": 8, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "9": {
+                    "args": [], 
+                    "bind_address": "10.0.0.17", 
+                    "bind_port": 6008, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 9, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Horatio"
+        }, 
+        {
+            "ports": {
+                "2": {
+                    "bind_address": "10.0.0.34", 
+                    "bind_port": 6001, 
+                    "port_id": 2, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "3": {
+                    "args": [], 
+                    "bind_address": "10.0.0.34", 
+                    "bind_port": 6002, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 3, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Servant"
+        }, 
+        {
+            "ports": {
+                "6": {
+                    "bind_address": "10.0.0.33", 
+                    "bind_port": 6005, 
+                    "port_id": 6, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }, 
+                "7": {
+                    "args": [], 
+                    "bind_address": "10.0.0.33", 
+                    "bind_port": 6006, 
+                    "kwargs": {
+                        "dialogue_id": "@DATA[dialogue_id]", 
+                        "line": "@DATA[line]"
+                    }, 
+                    "port_id": 7, 
+                    "port_type": "Output_Port"
+                }
+            }, 
+            "unique_name": "Sailor"
+        }, 
+        {
+            "ports": {
+                "10": {
+                    "bind_address": "10.0.0.7", 
+                    "bind_port": 6009, 
+                    "port_id": 10, 
+                    "port_type": "Input_Port", 
+                    "target_method": "methods.def_actor"
+                }
+            }, 
+            "unique_name": "Conductor"
+        }
+    ]
+}
